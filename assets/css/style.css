@@ -8,6 +8,10 @@
     outline: initial;
 }
 
+h1{
+    margin: 0px;
+}
+
 p{
     margin: 0px;
     padding: 0px;
@@ -987,3 +991,61 @@ p{
     color: #74AB58!important;
 }
 /* END STYLE ACCOUNT SETTING */
+
+
+/* STYLE LIST */
+
+.section-title{
+    margin-bottom: 50px;
+}
+
+.section-serch{
+    margin-bottom: 50px;
+}
+
+.section-serch input{
+    width: 50%;
+    padding: 9px 9px 9px 20px;
+}
+
+.agencie-item{
+    display: flex;
+    position: relative;
+}
+
+.agencie-item__img{
+    margin-right: 18px;
+}
+
+.agencie-item__name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.agencie-item__phone{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.agencie-item__phone{
+    margin-bottom: 10px;
+}
+
+.agencie-item__start{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    align-items: center;
+}
+
+.agencie-item__start p {
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.agencie-item__start svg{
+    width: 38px;
+    height: 38px;
+}
+/* END STYLE LIST */
