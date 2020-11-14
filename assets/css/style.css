@@ -1042,6 +1042,7 @@ p{
 .agencie-item__start p {
     font-weight: bolder;
     font-size: 27px;
+    margin-right: 3px;
 }
 
 .agencie-item__start svg{
