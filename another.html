@@ -22,32 +22,283 @@
         </nav>
     </header>
     <section>
-      <div class="el-reg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
 
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reg">
+        Регистрация
+      </button>
+      <div class="modal fade" id="reg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-reg">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-reg__title">
+                    <p>Регистрация пользователя</p>
+                  </div>
+                  <label for="#">Имя</label>
+                  <input type="text">
+                  <label for="#">Фамилия</label>
+                  <input type="text">
+                  <label for="#">Логин</label>
+                  <input type="text">
+                  <label for="#">E-mail</label>
+                  <input type="text">
+                  <div class="birthday">
+                    <label>Дата рождения</label>
+                    <div class="birthday-data">
+                      <label class="birthday-data__item">
+                        <p>День</p>
+                        <input type="text">
+                      </label>
+                      <label class="birthday-data__item">
+                        <p>Месяц</p>
+                        <input type="text">
+                      </label>
+                      <label class="birthday-data__item">
+                        <p>Год</p>
+                        <input type="text">
+                      </label>
+                    </div>
+                  </div>
+                  <label for="#">Номер телефона</label>
+                  <input type="tel" placeholder="+7 (___)___-__-__">
+                  <label for="#">Пароль</label>
+                  <input type="text">
+                  <label for="#">Подтверждение пароля</label>
+                  <input type="text">
+                  <div class="el-reg_checkbox">
+                    <label>
+                      <input type="checkbox">
+                      <p>Я соглшаюсь с правилами сайта, даю согласие на обработку персональных данных на условиях, определённых политикой кондефенциальности и получением писем от сайта</p>
+                    </label>
+                  </div>
+                  <div class="el-reg__button">
+                    <button type="submit" class="btn">
+                      <p>Зарегистрирвоаться</p>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="el-suc">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#suc">
+        Успешные изменения
+      </button>
+      <div class="modal fade" id="suc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-suc">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-suc__content">
+                    <img src="assets/img/ico_suc.svg" alt="Галочка">
+                    <p>Вы успешно<br> внесли изменения</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fail">
+        Ошибка
+      </button>
+      <div class="modal fade" id="fail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-fail">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-fail__content">
+                    <img src="assets/img/ico_fail.svg" alt="Галочка">
+                    <p>Извините,<br> произошла ошибка</p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="el-fail">
-
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#q">
+        Удалить метку
+      </button>
+      <div class="modal fade" id="q" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-q">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-q__text">
+                    <p>Вы точно хотите удалить метку?</p>
+                  </div>
+                  <div class="el-q__button">
+                    <button type="submit" class="btn"><p>Да</p></button>
+                    <button type="submit" class="btn"><p>Нет</p></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="el-q">
 
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit">
+        Редактирование метки
+      </button>
+      <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-edit">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-edit__title">
+                    <p>Редактирование метки</p>
+                  </div>
+                  <label>Название метки</label>
+                  <input type="text">
+                  <label>Адреc метки</label>
+                  <input type="text">
+                  <label>Контактный телефон</label>
+                  <input type="tel">
+                  <label>E-Mail</label>
+                  <input type="email">
+                  <div class="el-edit__photo">
+                    <div class="el-edit__photo-title">
+                      <p>Фотографии</p>
+                    </div>
+                    <div class="el-edit__photo-del">
+                      <a href="#">411123.png</a>
+                      <a href="#"><img src="assets/img/ico_del.svg" alt="Удолить"></a>
+                    </div>
+                    <div class="el-edit__photo-add">
+                      <a href="#">
+                        <img src="assets/img/ico_add.svg" alt="Добавить">
+                        <p>Добавить фотографии</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="el-edit__button">
+                    <button type="submit" class="btn">
+                      <p>Сохранить</p>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="el-edit">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vs">
+        Редактирование метки
+      </button>
+      <div class="modal fade" id="vs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-vs">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
 
+                  <div class="el-vs__title">
+                    <p>Для восстановления доступа<br> к аккаунту заполните форму ниже</p>
+                  </div>
+                  <label>E-Mail</label>
+                  <input type="text">
+                  <div class="el-edit__button">
+                    <button type="submit" class="btn">
+                      <p>Восстановить доступ</p>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="el-vs">
-
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#entry">
+        Вход
+      </button>
+      <div class="modal fade" id="entry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="el-entry">
+                <form action="">
+                  <div class="el-reg__close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><img src="assets/img/close_popup.svg" alt="Закрыть"></span>
+                    </button>
+                  </div>
+                  <div class="el-entry__title">
+                    <p>Вход в систему</p>
+                  </div>
+                  <div class="el-entry__input">
+                    <label>E-Mail</label>
+                    <input type="email">
+                    <label>Пароль</label>
+                    <input type="password">
+                    <a href="#" class="forgotPass">Забыли пароль?</a>
+                    <div class="el-edit__button">
+                      <button type="submit" class="btn">
+                        <p>войти</p>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="el-entry__reg">
+                    <p>Если у вас нет аккаунта, Вы можете</p>
+                    <div class="el-edit__button">
+                      <button type="submit" class="btn">
+                        <p>Зарегистроваться</p>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="el-entry">
-
+      </div>
+        </div>
       </div>
     </section>
     
